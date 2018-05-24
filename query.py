@@ -27,3 +27,8 @@ def loadqpxfromjson(o,d,salida):
 
 	fa.close()
 	return cadena
+
+ origen='MAD'
+ destino='LHR'
+ salida=datetime.date(2017,9,10)
+ print loadqpxfromjson(origen,destino,salida)
