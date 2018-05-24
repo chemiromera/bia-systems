@@ -6,7 +6,7 @@ def loadqpxfromjson(o,d,salida):
 	tarifas=[]
 	fechas=[]
 	vuelta=(salida + datetime.timedelta(days = 7))
-	fichero='/home/chemiromera/biatravel/tarifas_qpx/' + o + '-' + d + '-' + str(salida) + '.json'
+	fichero=o + '-' + d + '-' + str(salida) + '.json'
 	fa = open(fichero, "r")
 	for line in fa:
 		l = json.loads(line)
